@@ -1,0 +1,35 @@
+
+
+
+dict = {'Akshay':'7418529635',
+"Aban":'1234567890',
+"Shahbaaz Alam": '8527461366',
+"Mishal":"2345678133",
+"Renin":"7654345678",
+"Shinad": "789866546",
+"Adarsh": "8767545886",
+"Shahasin": "5623145463",
+
+}
+
+print("1: Search a Contact, 2: Display all, 3: Extract multiple numbers")
+n = int(input("Enter your choice: "))
+
+if n ==1:
+    t = input("Enter the name of the contact: ")
+    name  = dict.get(t)
+    print(t,':',name) 
+elif n ==2:
+     
+    print(dict)
+
+elif n ==3:
+    x = int(input("Enter the number of contacts to extract: "))
+    l = []
+    for i in range(x):
+        name = input("Enter the name of the contact: ")
+        a = name + " : "+dict.get(name)
+        l.append(a)
+    print(l)
+else:
+    print("Wrong input")      
